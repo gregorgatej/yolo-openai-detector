@@ -2,6 +2,18 @@
 
 This file stores initial recommended work orders for coding agents.
 
+## Branch and PR rule
+
+After the one-time repository bootstrap commit, all future work orders must use a named branch and open a pull request.
+
+Direct commits or pushes to `main` are forbidden unless the human explicitly approves an exception in the current session.
+
+Every future work order must state:
+
+- Branch name
+- Whether a PR is required
+- Whether merging is forbidden
+
 ## Work Order 001 — Initial contract verification
 
 ### Goal

@@ -385,3 +385,34 @@ Use official references where possible:
 - ONNX Runtime execution providers: https://onnxruntime.ai/docs/execution-providers/
 - ONNX Runtime Python getting started: https://onnxruntime.ai/docs/get-started/with-python.html
 - Ultralytics YOLO detect task: https://docs.ultralytics.com/tasks/detect/
+
+## 16. Branch and PR workflow
+
+After the one-time repository bootstrap commit, agents must not commit or push directly to `main`.
+
+All implementation, documentation, dependency, test, and configuration changes must be made on a named branch and opened as a pull request for human review.
+
+Allowed direct-to-`main` exception:
+
+- the one-time initial repository bootstrap commit, already completed.
+
+Future exceptions require explicit human approval in the current session.
+
+Default workflow:
+
+1. start from clean `main`;
+2. pull latest `main` with `--ff-only`;
+3. create a named branch;
+4. make the scoped change;
+5. run relevant validation;
+6. commit on the branch;
+7. push the branch;
+8. open a pull request with `gh pr create`;
+9. report the PR URL;
+10. do not merge.
+
+Every future work order must explicitly state:
+
+- Branch name;
+- Whether a PR is required;
+- Whether merging is forbidden.
