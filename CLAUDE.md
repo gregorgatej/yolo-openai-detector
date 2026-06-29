@@ -23,5 +23,7 @@ Summary of the most important constraints:
 - Base64 data URL image input only.
 - Tests required for behavior changes.
 - Final report required after every run.
+- After bootstrap, do not commit or push directly to `main`; use a named branch and PR for every change.
+- Every future work order must state the branch name, whether a PR is required, and whether merging is forbidden.
 
 If any requested task conflicts with `AGENTS.md`, stop and report the conflict.
